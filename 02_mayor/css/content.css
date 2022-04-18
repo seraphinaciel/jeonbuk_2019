@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+/*인사말*/
+.greeting .greeting_img{height:418px;background:url(/images/02_mayor/sub/sub01/greeting_mayor.jpg) 85% 0% no-repeat;background-size:768px auto;display:block;position:relative}
+.greeting .greeting_img:after{width:300px;height:128px;background:url(/images/02_mayor/sub/sub01/greeting_slogan_m.gif) bottom center no-repeat;background-size:contain;display:block;position:absolute;bottom:0;left:50%;transform:translate(-50%,0);content:""}
+.greeting .greeting_img img{display:none;}
+.greeting ul{margin:20px 0 0;}
+.greeting li{margin:0 0 20px;}
+@media all and (min-width:400px){.greeting .greeting_img{background-position:top right;}}
+@media all and (min-width:768px){
+.greeting .greeting_img{height:344px;background:url(/images/02_mayor/sub/sub01/greeting_mayor.jpg) 85% 0% no-repeat}
+.greeting .greeting_img img{max-width:100%;position:absolute;bottom:50px;left:20px;display:block;}
+.greeting .greeting_img:after{display:none}
+.greeting li{display:inline-block;width:calc(50% - 24px);vertical-align:top}
+.greeting li:last-of-type{margin:0 -4px 0 20px;}
+}
+@media all and (min-width:1024px) {
+.greeting .greeting_img{background-position:center left}
+}
+
+/*걸어온길*/
+.history li span{font-size:1.2rem;font-weight:500;color:#556279;display:inline-block;}
+.history li u{text-decoration:none;display:block;}
+.history li u:nth-of-type(n + 2){display:block;}
+.history .his01{padding:320px 0 0;background:url(/images/02_mayor/sub/sub01/his_bg01.jpg) no-repeat 50% -712px}
+.history .his01 p{font-size:2rem;font-weight:500;}
+.history .his01 p em{font-size:1rem;font-weight:300; display:block}
+.history .his01 ul{padding:0 0 0 20px;}
+.history .his01 li{margin:0 0 10px;position:relative}
+.history .his01 li:before{width:1px;height:120%;background:#ddd;display:block;position:absolute;top:0px;right:calc(100% + 20px);content:""}
+.history .his01 li:first-child:before{top:14px;}
+.history .his01 li:last-child:before{height:14px;top:0px;}
+.history .his01 li:after{width:20px;height:1px;background:#ddd;display:block;position:absolute;top:14px;right:100%;content:""}
+.history .his01 li.his_one:before{display:none;}
+.history .his02>div{position:relative}
+.history .his02>div:before{width:1px;height:100%;background:#ddd;display:block;position:absolute;top:0;left:0;content: ""}
+.history .his02{margin:50px 0 0;}
+.history .his02 li{padding:0 0 20px 20px;position:relative}
+.history .his02 li:before{width:6px;height:6px;background:#123466;border:4px solid #edf4fd;border-radius:50%;display:block;position:absolute;top:6px;left:-6px;content:""}
+.history .bg02 ul:before{padding-top:78.28%;margin:0 0 0 20px;background:url(/images/02_mayor/sub/sub01/his_bg02.jpg) no-repeat top / contain;display:block;content:""}
+.history .bg03 ul:before{padding-top:78.28%;margin:0 0 0 20px;background:url(/images/02_mayor/sub/sub01/his_bg03.jpg) no-repeat top / contain;display:block;content:""}
+@media all and (min-width:768px){
+.history .his01{padding:0 0 0 45%;background-position:top left;}
+.history .his02 h3{text-align:center;}
+.history .his02 h3:before{left:50%;transform:translate(-50%, 0)}
+.history .his_left{padding-right:50%;text-align:right;}
+.history .his02>div:before{left:50%;}
+.history .his_left li{padding:0 20px 20px 0;}
+.history .his_left li:before{left:auto;right:-8px;}
+.history .his_right{padding-left:50%}
+.history .bg02{position:relative}
+.history .bg02 ul:before{width:45%;height:100%;padding:0;position:absolute;left:calc(50% + 20px);background-position:center;}
+.history .bg03{position:relative}
+.history .bg03 ul:before{width:45%;height:100%;padding:0;position:absolute;right:calc(50% + 20px);background-position:center;}
+}
+
+/*저서*/
+.book .book_list{border:1px solid #ddd;margin:0 0 20px;}
+.book .img{padding:20px;text-align:center;position:relative}
+.book .img:after{width:100%;height:50%;background:#f5f5f5;position:absolute;bottom:0;left:0;content:""}
+.book .img img{box-shadow:0 0 15px 2px rgba(0,0,0,.3);position:relative;z-index:1}
+.book dl{padding:0 20px;}
+.book dt{margin:20px 0 10px;padding:0 0 10px;border-bottom:1px solid #ddd;font-size:1.2rem;font-weight:500;color:#b31912;}
+.book dd{margin:0 0 4px;}
+.book dd:last-child{padding:0 0 10px;border-bottom:1px solid #ddd;}
+.book dd span{padding:0 20px 0 0;font-weight:500;color:#555;vertical-align:top;}
+.book .txt{margin:10px 0;padding:10px 20px 20px;}
+.book .txt em{margin:10px 0 0;font-size:.9333rem;color:#555;text-align:right;display:block;}
+@media all and (min-width:768px){
+.book .book_list{position:relative}
+.book .img{width:30%;position:absolute;top:50%;left:0;transform:translate(-0%, -50%)}
+.book .img:after{width:120%;background:linear-gradient(90deg, rgba(245,245,245,1) 55%, rgba(255,255,255,0) 100%);}
+.book dl{padding:10px 20px 0 40%;}
+.book .txt{padding:10px 20px 20px 40%;}
+}
+
+/*매니페스토*/
+.manifesto_box .minfo{background:linear-gradient(45deg, rgba(32,18,21,1) 0%, rgba(69,49,31,1) 100%);}
+.manifesto_box .minfo>div{background:url(/images/02_mayor/sub/sub03/manifesto_bg.png) bottom left no-repeat;color:#fff;padding:30px 20px;}
+.manifesto_box .minfo dt{padding:20px 0; margin:0 0 20px;background:#3d2a25;color:#fff;text-align:center;font-size:1.5rem;font-weight:500;}
+.manifesto_box .minfo dd{padding:0 0 10px}
+.manifesto_box .minfo dd:last-of-type{padding:0 0 40px}
+.manifesto_box .minfo mark{background:#edf4fd}
+.manifesto_box .minfo .mbtn{margin:40px 0 0;text-align:center;}
+.manifesto_box .minfo .mbtn a{display:inline-block;}
+.manifesto_box .minfo .mbtn span{padding:10px 20px;display:inline-block;text-align:center;background:#8b0a04;color:#fff;transition:.5s ease}
+.manifesto_box .minfo .mbtn span:after{width:20px;height:20px;margin:0 0 0 10px;display:inline-block;background:url("/images/01_portal/common/icon_bullet.png") -98px -26px;vertical-align:top;content:""}
+.manifesto_box .minfo .mbtn a:focus span,.manifesto_box .minfo .mbtn a:hover span{background:#2e5ea0;border-radius:25px 0;transition:.5s ease}
+.manifesto_box .basic_box3{margin:20px 0 0;}
+.manifesto_box .basic_box3 .mbox{margin:20px 0 0;}
+@media all and (min-width:768px){
+.manifesto_box .minfo>div{padding:50px 40px 50px;background-position:bottom center}
+.manifesto_box .minfo dt{width:26%;margin:0 2% 0 0;display:inline-block;vertical-align:top;}
+.manifesto_box .minfo dd:first-of-type{display:inline-block;width:70%}
+.manifesto_box .basic_box3:after{display:block;clear:both;content:""}
+.manifesto_box .basic_box3 div{display:inline-block}
+.manifesto_box .basic_box3 .mimg{width:calc(30% - 4px);}
+.manifesto_box .basic_box3 .mbox{width:64%;margin:0 0 0 4%;}
+}
+
+/*선거공보*/
+.gongbo{background:#edf4fd;}
+.gongbo p img{max-width:100%;}
+@media all and (min-width:768px){
+.gongbo p{width:60%;}
+.gongbo dl{width:40%;margin:10% 0 0;;}
+}
+
+/*도민평가단*/
+.domin_imgbox{margin:20px 0 0;padding:0 0 20px;border-bottom:1px dashed #cdcdcd;}
+.domin_imgbox li{margin:0 0 10px;text-align:center;}
+.domin_imgbox img{max-width:100%;}
+@media all and (min-width:600px){
+.domin_imgbox li{width:50%;margin:0;display:inline-block;}
+.domin_imgbox li:last-child{width:calc(50% - 4px);}
+.domin_imgbox.domin2 li:first-child{width:69%}
+.domin_imgbox.domin2 li:last-child{width:calc(31% - 4px)}
+}
+.domin_imgbox2019{margin:20px 0 0;padding:0 0 20px;border-bottom:1px dashed #cdcdcd;}
+.domin_imgbox2019 li{margin:0 0 10px;text-align:center;}
+.domin_imgbox2019 img{max-width:100%;}
+@media all and (min-width:600px){
+	.domin_imgbox2019:after{display:block;clear: both;content: ""}
+.domin_imgbox2019 li{width:calc(33.33% - 4px);margin:0 2px;float:left;}
+.domin_imgbox2019.domin2019 li:first-of-type{width:100%}
+.domin_imgbox2019.domin2019 li:nth-of-type(2){width:35%;margin:4px 0 0;}
+.domin_imgbox2019.domin2019 li:nth-of-type(3){width:calc(65% - 4px);margin:4px 0 0 4px;}
+}
+
+/*도민평가단 조례*/
+.domin_rule ul{margin:10px 0 0 10px}
+.domin_rule ul>li{line-height:1.6;margin:0 0 5px 0;position:relative}
+.domin_rule li>ul{margin:10px 0}
+.domin_rule ul ul{margin:10px 0 0 10px}
+
+/*비전 및 목표*/
+.goal_box{margin:30px 0 0;}
+.goal_box .tit{background:#383e56;color:#fff;font-weight:500;text-align:center;padding:10px;box-sizing:border-box}
+.goal_box>dd{margin:0 0 30px;border:1px solid #cdcdcd;text-align:center;box-sizing:border-box}
+.goal_box>dd span{padding:20px;display:block;background:#f5f5f5;}
+.goal_box .stit{padding:4px;margin:0 0 8px;border-top:1px dashed #cdcdcd;border-bottom:1px dashed #cdcdcd;background:#edf4fd;font-weight:500;}
+.goal_box dd dd{padding:0 0 6px 10px;}
+@media all and (min-width:768px){
+.goal_box{position:relative}
+.goal_box:after{display:block;clear:both;content:""}
+.goal_box .tit{padding:10px 0;background:#fff;border-bottom:1px solid;color:#000;position:absolute;top:0;left:0;}
+.goal_box>dd{float:left;width:25%;padding:0 0 4%;border:0;}
+.goal_box>dd span{margin:0 10px 10px;display:block;}
+.goal_box .stit{padding:10px 0;background:#fff;border:0;border-bottom:1px solid;position:absolute;top:103px;left:0;}
+.goal_box dd dd{text-align:left;padding-left:30px;position:relative}
+.goal_box dd dd:before{content:"-";padding:0 10px 0 0;position:absolute;top:0;left:14px;}
+.goal_box>dd:nth-of-type(1),.goal_box>dd:nth-of-type(4){padding-left:25%;box-sizing:content-box}
+.goal_box .tit:nth-of-type(n+4){top:50%;}
+.goal_box dd:nth-of-type(n+4) dt{top:calc(50% + 93px);}
+
+}
+@media all and (min-width:1024px){
+.goal_box>dd{width:16.66%;}
+.goal_box>dd:first-of-type{padding-left:16.66%;}
+.goal_box>dd span{height:94px;padding:0;line-height:94px;margin:0 0 10px;background:0;border:2px solid;border-right:0;}
+.goal_box>dd:nth-of-type(1) span{border-color:#85c765;}
+.goal_box>dd:nth-of-type(2) span{border-color:#1aaeb2;}
+.goal_box>dd:nth-of-type(3) span{border-color:#424ea2;}
+.goal_box>dd:nth-of-type(4) span{border-color:#2a72ba;}
+.goal_box>dd:nth-of-type(5) span{border-right:2px solid;border-color:#00ace8;}
+.goal_box>dd:nth-of-type(4){padding:inherit;}
+.goal_box .tit:nth-of-type(n+4){top:0;}
+.goal_box dd:nth-of-type(n+4) dt{top:103px;}
+}
+
+/*공약지도*/
+.pm_list{border:0;padding:0;}
+.pm_list2{border-top:1px solid;}
+.pm_list2 li{padding:10px 0;margin:0 0 0 24px;border-bottom:1px solid #cdcdcd;list-style:decimal-leading-zero;}
+.pledge_map{margin:20px 0 0;}
+@media all and (min-width:768px){
+.pm_list:after{display:block;clear:both;content:""}
+.pm_list li{width:33.33%;padding:0 10px 0 16px;float:left;box-sizing:border-box;}
+.pm_list2:after{display:block;clear:both;content:""}
+.pm_list2 li{width:calc(50% - 24px);height:60px;padding:10px 8px 0 0;float:left;border:0;box-sizing:border-box;word-break:keep-all}
+}
+@media all and (min-width:1024px){
+.pm_list2 li{width:calc(33.33% - 24px);}
+}
+
+/*공약현황*/
+.present_business{max-width:400px;}
+.present_business:after{display:block;clear:both;content:""}
+.present_business>li{float:left;width:calc(33.33% - 10px);margin:0 5px;text-align:center}
+.present_business>li>span{padding:0 0 10px;font-size:1.1333rem;font-weight:500;display:inline-block}
+.present_business ul{height:320px;}
+.present_business ul li{color:#fff;box-sizing:border-box;position:relative}
+.present_business ul span{position:absolute;top:50%;left:0;right:0;transform:translate(0,-50%)}
+.present_business .pb01 li:first-child{height:68%;background:url(/images/02_mayor/sub/sub03/present_bg01.gif)}
+.present_business .pb01 li:last-child{height:32%;background:url(/images/02_mayor/sub/sub03/present_bg04.gif)}
+.present_business .pb02 li:first-child{height:70%;background:url(/images/02_mayor/sub/sub03/present_bg02.gif)}
+.present_business .pb02 li:last-child{height:30%;background:url(/images/02_mayor/sub/sub03/present_bg05.gif)}
+.present_business .pb03 li:first-child{height:90%;background:url(/images/02_mayor/sub/sub03/present_bg03.gif)}
+.present_business .pb03 li:last-child{height:10%;background:url(/images/02_mayor/sub/sub03/present_bg06.gif)}
+@media all and (min-width:1024px){
+.present_business{max-width:100%;}
+.present_business>li{width:80%;padding:0 0 10px 20%;margin:0;position:relative;}
+.present_business>li>span{position:absolute;top:20px;left:10px;}
+.present_business ul{height:60px;}
+.present_business ul:after{display:block;clear:both;content:""}
+.present_business ul li{float:left;}
+.present_business .pb01 li:first-child{height:100%;width:68%;}
+.present_business .pb01 li:last-child{height:100%;width:32%;}
+.present_business .pb02 li:first-child{height:100%;width:70%;}
+.present_business .pb02 li:last-child{height:100%;width:30%;}
+.present_business .pb03 li:first-child{height:100%;width:90%;}
+.present_business .pb03 li:last-child{height:100%;width:10%;}
+.present_img{padding:20px 0;}	
+}
+
+/*사업별 추진일정표*/
+.roadmap_t td.check{padding:0;}
+.roadmap_t td.check span{display:block;height:10px;background:#8290a8;}
+.roadmap_t tr.point_bg th a{display:block;}
+.roadmap_t tr.point_bg th.on a{font-weight:600;}
+.roadmap_t tr.point_bg th a:after{content:"+";margin:0 10px 0 0;display:inline-block;float:right;}
+.roadmap_t tr.point_bg th.on a:after{content:"-";font-size:1.6rem}
+.roadmap_t tr.point_bg2,.roadmap_t tr.point_bg2 th{background:#edf4fd}
+
+/*공약가계부*/
+@media all and (min-width:768px){}
+@media all and (min-width:1024px){}
+
+/*공약사업실천계획 확정절차*/
+@media all and (min-width:768px){}
+@media all and (min-width:1024px){}
+
+/*공약이행현황*/
+.progress_tit .basic_btn{margin:0 0 50px}
+.progress_tit dd{padding:14px 0 0;}
+.progress_tit dd strong{padding:4px;margin:0 0 10px;border-radius:30px;font-size:1.1333rem;text-align:center;display:block;}
+.progress_tit dd:nth-of-type(1) strong{background:#334ec5;color:#fff;}
+.progress_tit dd:nth-of-type(2) strong{background:#f57164}
+.progress_tit dd:nth-of-type(3) strong{background:#049db3}
+@media all and (min-width:768px){
+.progress_tit dt{width:40%;float:left;}
+.progress_tit dd{padding:10px 0 0 45%}
+.progress_tit dd strong{width:36%;}
+}
+@media all and (min-width:1024px){
+.progress_tit dl{height:302px;}
+.progress_tit dd strong{width:28%;border-radius:30px;}
+}
+.progress_dl dl{margin:30px 0 0;}
+.progress_dl dt{background:#556279;border-radius:10px;position:relative}
+.progress_dl dt:after{content:"+";font-size:1.2rem;font-weight:600;color:#fff;position:absolute;top:15px;right:20px;}
+.progress_dl dt.on{background:#123466;border-radius:10px 10px 0 0;}
+.progress_dl dt.on:after{content:"-";}
+.progress_dl dt a{padding:20px 46px 20px 20px;color:#fff;display:block}
+.progress_dl dd{padding:10px 20px;border:solid 1px #ccc;box-sizing:border-box;border-radius:0 0 10px 10px;}
+.progress_dl li{padding:15px 0;border-top:dashed 1px #ccc;line-height:20px;}
+.progress_dl li:first-child{border:none;}
+.progress_dl li a{padding:5px 0 0 42px;display:inline-block;position:relative;box-sizing:border-box}
+.progress_dl li .num{margin:0 10px 0 0;background:#8b0a04;position:absolute;top:0;left:0;}
+.progress_dl li span{margin:10px 0 0;width:100%;display:inline-block;}
+@media all and (max-width:374px){
+.progress_dl li span{overflow:hidden}
+.progress_dl li span img{height:36px;position:relative;left:-22px}
+}
+@media all and (min-width:768px){
+.progress_dl li a{width:calc(100% - 298px);}
+.progress_dl li span{width:auto;margin:0;overflow-x:visible}
+}
+
+/*직소민원*/
+.jigso .basic_box>div{background:url(/images/02_mayor/sub/sub04/jigso_img.png) no-repeat center 30px #fff}
+.jigso .basic_box dl{margin:100px 0 0}
+@media all and (min-width:768px){
+.jigso .basic_box>div{background-position:50px 30px}
+.jigso .basic_box dl{margin:0 0 0 150px}
+}
+/*처리흐름*/
+.jigso_step .title h2{font-size:1.2rem;margin:0;padding:0;color:#fff;display:inline-block;}
+.jigso_step .title h2:before{display:none}
+
+/*역대도지사*/
+.his_dosisa .box{margin:20px 0 0;border:1px solid #ddd;box-sizing:border-box}
+.his_dosisa .box.dcurrent{margin-top:0;border:2px solid #b31912;border-radius:20px 0;background:#fff;box-shadow:4px 4px 0px 0px #b31912;position:relative}
+/*
+.his_dosisa .box.dcurrent:before{width:40px;height:60px;background:#002253;display:block;position:absolute;top:-10px;right:10px;content:""}
+.his_dosisa .box.dcurrent:after{border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:20px solid #fff;width:0;height:0;display:block;position:absolute;top:30px;right:10px;content:""}
+*/
+.his_dosisa span{padding:20px;text-align:center;display:block;}
+.his_dosisa img{max-height:100%;}
+.his_dosisa p{font-size:1.2rem;font-weight:500;color:#2c2f40;text-align:center;background:#f4f4f8;padding:10px;}
+.his_dosisa ul{margin:0;padding:10px 20px;}
+.his_dosisa li{text-indent:-38px;margin-left:38px;}
+@media all and (min-width:768px){
+.his_dosisa:after{display:block;clear:both;content:""}
+.his_dosisa .box{width:calc(50% - 10px);height:360px;margin:20px 20px 0 0;float:left;}
+.his_dosisa .box:nth-of-type(2){margin-top:0;}
+.his_dosisa .box:nth-of-type(2n){margin-right:0;}
+.his_dosisa span{height:140px;}
+}
+@media all and (min-width:1024px){
+.his_dosisa .box{width:calc(33.33% - 15px);height:400px;}
+.his_dosisa .box:nth-of-type(3){margin-top:0;}
+.his_dosisa .box:nth-of-type(2n){margin-right:20px;}
+.his_dosisa .box:nth-of-type(3n){margin-right:0;}
+}
+
+/*도지사 사이트맵*/
+.ss_mayor,.ss_mayor h2{color:#3588D0;border-color:#dde4eb}
+.ss_mayor h2{background:#f4f4f8}
+.ss_mayor .sm-dept-2{border-color:#dde4eb}
+.ss_mayor .sm-dept-2>li>a{color:#123466;}   
+.ss_mayor .sm-dept-3>li{background:#f4f4f8;}
+@media all and (min-width:768px){
+.ss_mayor .sm-dept-2>li{width:49%;}
+}
+@media all and (min-width:1024px){
+.ss_mayor .sm-dept-2>li{width:32.33%;}
+}
