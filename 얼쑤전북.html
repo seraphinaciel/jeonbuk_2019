@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>전라북도청</title>
+<meta name="title" content="전라북도청" />
+<meta name="author" content="skoinfo" />
+<meta name="keywords" content="도민소통, 민원정보, 도정알림마당, 정보공개, 분야별정보, 전북소개" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<link href="css/import.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!--
+
+****** 작업전 참고사항 *******
+
+기존 레이아웃은 유지하되 해당 사이트에서만 변경되는 디자인이 있는경우(ex:검색버튼 컬러)
+공통 layout.css 는 건들지 마시고 각 사이트의 main.css 에서 따로 컬러값을 입력하여 주시기 바랍니다.
+이와관련하여 개발팀은 레이아웃 작업 시 css 를 불러올경우 layout.css 아래에 main.css 를 위치하여 주시기 바랍니다.
+
+-->
+</head>
+<body>
+<ul id="skip">
+	<li><a href="#content">본문으로 바로가기</a></li>
+</ul>
+<div>
+	<!--상단 s-->
+	<header class="">
+		<div class="gnb">
+			<div>
+				<ul class="top_sitelink">
+					<li class="on"><a href="">전라북도청</a></li>
+					<li><a href="">도지사실</a></li>
+					<li><a href="">도의회</a></li>
+					<li><a href="">전라북도 토탈관광</a></li>
+				</ul>
+				<p class="top_login"><a href="">로그인</a>
+					<!--<a href="">로그아웃</a>-->
+				</p>
+				<div class="top_languege">
+					<button class="open">Language <span>열기</span></button>
+					<div>
+						<!-- 펼침시 on 추가 -->
+						<ul>
+							<li><a href="#" target="_blank" title="새창열림">English</a></li>
+							<li><a href="#" target="_blank" title="새창열림">中國語</a></li>
+							<li><a href="#" target="_blank" title="새창열림">日本語</a></li>
+							<li><a href="#" target="_blank" title="새창열림">Việt nam</a></li>
+						</ul>
+						<button class="close">Language <span>닫기</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg hide"></div>
+		<div class="allmenu">
+			<h1><a href="/"><img src="images/01_portal/common/h_logo.png" alt="천년의 비상 전라북도"></a></h1>
+			<button class="open">전체메뉴 열기</button>
+			<!--
+		1. 넓이 0~768px(모바일, 태블릿) : on 추가, 1~4차 메뉴(dept01~04) 표출
+		2. 넓이 769px~(PC형) : on 제거, 4차 메뉴(dept04) 미표출
+		-->
+			<nav class="menu ">
+				<h2>전체메뉴</h2>
+				<ul class="dept01">
+					<!--1차 메뉴 표출 시 on 추가-->
+					<li class="menu01 on">
+						<a href="">도민소통</a>
+						<!--2~4차 메뉴 미표출 시 hide 추가-->
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>도민소통</strong><span>도민과 소통하는 전북</span></p>
+							</div>
+							<ul class="dept02">
+								<li><a href="">국민제안</a></li>
+								<li><a href="">도정참여</a></li>
+								<li><a href="">안전신문고</a></li>
+								<li><a href="">규제개혁신문고</a></li>
+								<li><a href="">자유발언대</a>
+									<ul class="dept03">
+										<li><a href="">나도한마디</a></li>
+										<li><a href="">칭찬합시다</a>
+											<ul class="dept04">
+												<li><a href="">4차메뉴</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="">전자민원모니터</a>
+									<ul class="dept03">
+										<li><a href="">안내</a></li>
+										<li><a href="">모니터카페</a></li>
+										<li><a href="">모니터단 모집</a></li>
+									</ul>
+								</li>
+								<li><a href="">인권공감</a>
+									<ul class="dept03">
+										<li><a href="">인권담당관 개요</a></li>
+										<li><a href="">인권침해 제보</a></li>
+										<li><a href="">인권자료실</a></li>
+									</ul>
+								</li>
+								<li><a href="">자랑스러운 전북인대상 후보자 발굴</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu02 ">
+						<a href="">민원정보</a>
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>민원정보</strong><span>민원정보</span></p>
+							</div>
+							<ul class="dept02">
+								<li class="newlink">
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+										<li class="newlink"><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+										<li><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu03">
+						<a href="">도정알림마당</a>
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>도정알림마당</strong><span>도정알림마당</span></p>
+							</div>
+							<ul class="dept02">
+								<li>
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu04">
+						<a href="">정보공개</a>
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>정보공개</strong><span>정보공개</span></p>
+							</div>
+							<ul class="dept02">
+								<li>
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu05">
+						<a href="">분야별정보</a>
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>분야별정보</strong><span>분야별정보</span></p>
+							</div>
+							<ul class="dept02">
+								<li>
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu06">
+						<a href="">전북소개</a>
+						<div class="deptcon hide">
+							<div class="deptbox">
+								<p class="basic_p"><strong>전북소개</strong><span>전북소개</span></p>
+							</div>
+							<ul class="dept02 hide">
+								<li>
+									<a href="">2차메뉴</a>
+									<ul class="dept03">
+										<li><a href="">3차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<button class="close">전체메뉴 닫기</button>
+			</nav>
+			<div class="top_search">
+				<button class="open">검색창 열기</button>
+				<div>
+					<!-- 펼침시 on 추가 -->
+					<form>
+						<fieldset>
+							<legend> 통합검색</legend>
+							<select title="검색항목">
+								<option>통합검색</option>
+							</select>
+							<input type="text" title="검색어" placeholder="검색어를 입력해주세요."><input type="submit" value="검색">
+						</fieldset>
+					</form>
+					<button class="close">닫기</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--상단 e-->
+	<!--메인 컨텐츠 시작-->
+	<section class="portal_section sub_container">
+		<div class="sub_wrap">
+			<div class="sl_left smenu">
+				<div class="smenu_title"><h2><span><i>도민소통</i></span></h2></div>
+				<div>
+					<ul class="sdept02">
+						<li><a href="">국민제안</a></li>
+						<li><a href="">도정참여</a></li>
+						<li><a href="">안전신문고</a></li>
+						<li><a href="">규제개혁신문고</a></li>
+						<li class="on">
+						<!--표출 시 on 추가-->
+							<a href="">자유발언대</a>
+							<ul class="sdept03">
+								<li class="newlink"><a href="">나도한마디</a></li>
+								<li class="on"><a href="">칭찬합시다</a>
+									<ul class="sdept04">
+										<li class="newlink"><a href="">4차메뉴</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">전자민원모니터</a>
+							<ul class="sdept03">
+								<li><a href="">안내</a></li>
+								<li><a href="">모니터카페</a></li>
+								<li><a href="">모니터단 모집</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">인권공감</a>
+							<ul class="sdept03">
+								<li><a href="">인권담당관 개요</a></li>
+								<li><a href="">인권침해 제보</a></li>
+								<li><a href="">인권자료실</a></li>
+							</ul>
+						</li>
+						<li class="newlink"><a href="">자랑스러운 전북인대상 후보자 발굴</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sl_right">
+				<div class="s_title">
+					<h2>도민소통</h2>
+					<p class="local"><a href="">처음페이지로 바로가기</a><a href="">1차 메뉴</a><a href="">2차 메뉴</a><a href="">3차 메뉴</a><a href="">4차 메뉴</a></p>
+					<ul class="s_service">
+						<li><a href="" class="print">현재 페이지 인쇄</a></li>
+						<li class="s_share "><!--표출 시 on 추가-->
+							<a href="" class="share">sns 공유</a>
+							<ul>
+								<li>
+									<a href="" class="kakao">카카오톡</a>
+									<a href="" class="facebook">페이스북</a>
+									<a href="" class="twitter">트위터</a>
+									<a href="" class="band">네이버 밴드</a>
+								</li>
+								<li><a href="" class="close">닫기</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="font_zoomin">글자 크기 확대</a></li>
+						<li><a href="" class="font_zoomout">글자 크기 축소</a></li>
+					</ul>
+				</div>
+				
+<article id="content">
+<!--******************************************************************************************************************-->
+<!--***컨텐츠 s******************************************************************************************************-->
+<!--******************************************************************************************************************-->
+<div class="bbs_skin">
+	<p class="bbs_comment">정보유지 시간은 로그인 후로 15분입니다. 정보유지 시간 내에 작성을 완료해 주시기 바랍니다.<br><span class="w_star">*</span> 표시된 항목은 필수 입력 항목입니다.</p>
+	<form>
+		<fieldset>
+			<legend>게시글 등록</legend>
+			<table>
+				<caption><strong>공지사항 등록</strong>으로 제목 , 작성자 , 작성일, 조회수, 구분, 삭제일, 공지글, 내용, 파일첨부 등을 제공 또는 입력합니다.</caption>
+				<colgroup>
+					<col style="width:20%">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="dataTitle"><span class="w_star">*</span>신청인</label></th>
+						<td><input type="text" id="dataTitle" name="dataTitle" value="" class="input_text"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="userNick"><span class="w_star">*</span>이메일</label></th>
+						<td><input type="text" id="userNick" name="userNick" value="" class="input_text input_w170"></td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="btnuserZipcode"><span class="w_star">*</span>우편번호</label></th>
+						<td>
+							<input type="text" id="userZipcode" name="userZipcode" value="" title="우편번호" class="input_text input_w170"> <button id="btnuserZipcode" class="bbs_btnfind">우편번호 찾기</button>
+							<input type="text" id="userAddress1" name="userAddress1" value="" title="새도로명 주소" class="input_text mt10">
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="userAddress2"><span class="w_star">*</span>주소</label></th>
+						<td>
+							<input type="text" id="userAddress2" name="userAddress2" value="" title="나머지 주소" class="input_text">
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+	<p class="bbs_btn"><a href="#">확인</a><a href="#">취소</a></p>
+</div>
+
+       
+<!--******************************************************************************************************************-->
+<!--***컨텐츠 e******************************************************************************************************-->
+<!--******************************************************************************************************************-->
+</article>
+				<!-- 공공누리 S-->
+				<div class="license">
+					<div class="mark_box"><img src="/images/01_portal/contents/open04.jpg" alt="공공누리 심볼마크(제4유형)" /></div>
+					<p class="license_txt">
+						<a href="http:/www.kogl.or.kr/open/info/license.do" target="_blank" title="새창열림">전라북도청에서 제작한 본 공공저작물은<br>공공누리 <span>"출처표시+상업적이용금지+변경금지"</span> 조건에 따라 이용할 수 있습니다.</a>
+					</p>
+				</div>
+				<!-- 공공누리 E -->
+				<!-- 담당자정보&만족도조사 S -->
+				<div class="scon_bottom">
+					<div class="manager">
+						<ul>
+							<li class="manager_btn01"><strong>담당부서 : </strong>총무과/총무팀</li>
+							<li class="manager_btn02"><strong>연락처 : </strong>063-123-4567</li>
+							<li class="manager_btn03"><strong>최종수정일 : </strong>2019-12-31</li>
+						</ul>
+					</div>
+					<div class="research">
+						<form>
+							<fieldset>
+								<legend>만족도 조사</legend>
+								<p class="tit">이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</p>
+								<ul>
+									<li>
+										<input type="radio" id="menuGradeCount1" name="menuGradeCount" value="5" checked>
+										<label for="menuGradeCount1">매우 만족</label>
+										<input type="radio" id="menuGradeCount2" name="menuGradeCount" value="4">
+										<label for="menuGradeCount2">만족</label>
+										<input type="radio" id="menuGradeCount3" name="menuGradeCount" value="3">
+										<label for="menuGradeCount3">보통</label>
+										<input type="radio" id="menuGradeCount4" name="menuGradeCount" value="2">
+										<label for="menuGradeCount4">불만족</label>
+										<input type="radio" id="menuGradeCount5" name="menuGradeCount" value="1">
+										<label for="menuGradeCount5">매우불만족</label>
+									</li>
+									<li>
+										<input type="text" name="menuGradeMemo" class="sch_txt" maxlength="100" title="의견">
+										<input type="submit" value="의견등록" class="rsch_btn">
+									</li>
+								</ul>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<!-- 담당자정보&만족도조사 E -->
+			</div>
+		</div>
+	</section>
+	<!--메인 컨텐츠 끝-->
+	<!--하단 s-->
+	<footer>
+		<div class="fbanner">
+			<div>
+				<h2 class="blind">배너모음</h2>
+				<p class="btn_set">
+					<a href="" class="prev"><span>이전</span></a>
+					<a href="" class="stop"><span>일시정지</span></a>
+					<!-- <a href="" class="play"><span>재생</span></a> -->
+					<a href="" class="next"><span>다음</span></a>
+				</p>
+				<div class="fbanner_list">
+					<ul>
+						<li><a href="" target="_blank" title="새창열림"><img src="/images/01_portal/common/img_banner01.gif" alt="제목"></a></li>
+						<li><a href="" target="_blank" title="새창열림"><img src="/images/01_portal/common/img_banner02.gif" alt="제목"></a></li>
+						<li><a href="" target="_blank" title="새창열림"><img src="/images/01_portal/common/img_banner03.jpg" alt="제목"></a></li>
+						<li><a href="" target="_blank" title="새창열림"><img src="/images/01_portal/common/img_banner04.jpg" alt="제목"></a></li>
+						<li><a href="" target="_blank" title="새창열림"><img src="/images/01_portal/common/img_banner05.jpg" alt="제목"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="f_sitelink">
+			<h2 class="blind">사이트 바로가기</h2>
+			<div class="sitelink_list">
+				<button class="btn_open">부서별 바로가기<span>열기</span> </button>
+				<div class="list_wrap ">
+					<!-- 펼침시  on 추가 -->
+					<ul>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108001000000" target="_blank" title="감사관 새창열림">감사관</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108028000000" target="_blank" title="인권담당관 새창열림">인권담당관</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108004000000" target="_blank" title="기획조정실 새창열림">기획조정실</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108026000000" target="_blank" title="도민안전실 새창열림">도민안전실</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108024000000" target="_blank" title="자치행정국 새창열림">자치행정국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108009000000" target="_blank" title="농축수산식품국 새창열림">농축수산식품국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108006000000" target="_blank" title="문화체육관광국 새창열림">문화체육관광국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108007000000" target="_blank" title="환경녹지국 새창열림">환경녹지국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108010000000" target="_blank" title="복지여성보건국 새창열림">복지여성보건국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108011000000" target="_blank" title="건설교통국 새창열림">건설교통국</a></li>
+						<li><a href="http:/www.sobang.kr" target="_blank" title="소방본부 새창열림">소방본부</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108027000000" target="_blank" title="공보관 새창열림">공보관</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108023000000" target="_blank" title="경제산업국 새창열림">일자리경제국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108029000000" target="_blank" title="혁신성장산업국 새창열림">혁신성장산업국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108012000000" target="_blank" title="대외협력국 새창열림">대외협력국</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108022000000" target="_blank" title="새만금추진지원단 새창열림">새만금추진지원단</a></li>
+						<li><a href="http:/www.assem.jeonbuk.kr/index.do" target="_blank" title="의회사무처 새창열림">전라북도의회</a></li>
+						<li><a href="http:/www.jbares.go.kr" target="_blank" title="농업기술원 새창열림">농업기술원</a></li>
+						<li><a href="http:/hrd.jeonbuk.go.kr" target="_blank" title="인재개발원 새창열림">인재개발원</a></li>
+						<li><a href="http:/jihe.jeonbuk.go.kr" target="_blank" title="보건환경연구원 새창열림">보건환경연구원</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108017000000" target="_blank" title="전북서울사업소 새창열림">전라북도서울사무소</a></li>
+						<li><a href="http:/agriacademy.jeonbuk.go.kr" target="_blank" title="농식품인력개발원 새창열림">농식품인력개발원</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108014000000" target="_blank" title="동물위생시험소 새창열림">동물위생시험소</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108016000000" target="_blank" title="수산기술연구소 새창열림">수산기술연구소</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108018000000" target="_blank" title="산림환경연구소 새창열림">산림환경연구소</a></li>
+						<li><a href="http:/kukakwon.or.kr" target="_blank" title="도립국악원 새창열림">도립국악원</a></li>
+						<li><a href="/index.jeonbuk?menuCd=DOM_000000108015000000" target="_blank" title="도로관리사업소 새창열림">도로관리사업소</a></li>
+						<li><a href="http:/www.jma.go.kr" target="_blank" title="도립미술관 새창열림">도립미술관</a></li>
+						<li><a href="http:/www.jbwss.sc.kr" target="_blank" title="도립여성중고등학교 새창열림">도립여성중고등학교</a></li>
+					</ul>
+					<button class="btn_close">부서별 바로가기<span>닫기</span></button>
+				</div>
+			</div>
+			<div class="sitelink_list">
+				<button class="btn_open">시/군 바로가기 <span>열기</span> </button>
+				<div class="list_wrap ">
+					<ul>
+						<li><a href="http:/www.jeonju.go.kr/" target="_blank" title="새창열림">전주시청</a></li>
+						<li><a href="http:/www.gunsan.go.kr/" target="_blank" title="새창열림">군산시청</a></li>
+						<li><a href="http:/www.jeongeup.go.kr/" target="_blank" title="새창열림">정읍시청</a></li>
+						<li><a href="http:/www.namwon.go.kr/" target="_blank" title="새창열림">남원시청</a></li>
+						<li><a href="http:/www.gimje.go.kr/" target="_blank" title="새창열림">김제시청</a></li>
+						<li><a href="http:/www.wanju.go.kr/" target="_blank" title="새창열림">완주군청</a></li>
+						<li><a href="http:/www.jinan.go.kr/" target="_blank" title="새창열림">진안군청</a></li>
+						<li><a href="http:/www.muju.go.kr/" target="_blank" title="새창열림">무주군청</a></li>
+						<li><a href="http:/www.jangsu.go.kr/" target="_blank" title="새창열림">장수군청</a></li>
+						<li><a href="http:/www.imsil.go.kr/" target="_blank" title="새창열림">임실군청</a></li>
+						<li><a href="http:/www.sunchang.go.kr/" target="_blank" title="새창열림">순창군청</a></li>
+						<li><a href="http:/www.gochang.go.kr/" target="_blank" title="새창열림">고창군청</a></li>
+						<li><a href="http:/www.buan.go.kr/" target="_blank" title="새창열림">부안군청</a></li>
+					</ul>
+					<button class="btn_close">시/군 바로가기 <span>닫기</span></button>
+				</div>
+			</div>
+			<div class="sitelink_list">
+				<button class="btn_open">도내유관기관 <span>열기</span> </button>
+				<div class="list_wrap ">
+					<ul>
+						<li><a href="" title="새창열림">국립군산검역소</a></li>
+						<li><a href="" title="새창열림">국립무형유산원</a></li>
+						<li><a href="" title="새창열림">국립전주박물관</a></li>
+						<li><a href="" title="새창열림">군산해양경찰서</a></li>
+						<li><a href="" title="새창열림">새만금개발청</a></li>
+						<li><a href="" title="새창열림">새만금지방환경청</a></li>
+						<li><a href="" title="새창열림">서부지방산림청</a></li>
+						<li><a href="" title="새창열림">익산지방국토관리청</a></li>
+						<li><a href="" title="새창열림">장수군 산림조합</a></li>
+						<li><a href="" title="새창열림">전북교육청</a></li>
+						<li><a href="" title="새창열림">전주지방법원</a></li>
+						<li><a href="" title="새창열림">전주지방검찰청</a></li>
+						<li><a href="" title="새창열림">전북지방경찰청</a></li>
+						<li><a href="" title="새창열림">전북지방병무청</a></li>
+						<li><a href="" title="새창열림">전라북도선거관리위원회</a></li>
+						<li><a href="" title="새창열림">지방자치인재개발원</a></li>
+						<li><a href="" title="새창열림">전북지방중소기업청</a></li>
+						<li><a href="" title="새창열림">전주고용노동지청</a></li>
+						<li><a href="" title="새창열림">전북지방우정청</a></li>
+						<li><a href="" title="새창열림">전라북도체육회</a></li>
+						<li><a href="" title="새창열림">전라북도장애인체육회</a></li>
+						<li><a href="" title="새창열림">전북연구원</a></li>
+						<li><a href="" title="새창열림">전북교통문화연수원</a></li>
+						<li><a href="" title="새창열림">전라북도문화콘텐츠산업진흥원</a></li>
+						<li><a href="" title="새창열림">전라북도생물산업진흥원</a></li>
+						<li><a href="" title="새창열림">전라북도경제통상진흥원</a></li>
+						<li><a href="" title="새창열림">전북테크노파크컨텍센터</a></li>
+						<li><a href="" title="새창열림">전북인재육성재단</a></li>
+						<li><a href="" title="새창열림">전북테크노파크</a></li>
+						<li><a href="" title="새창열림">전북여성교육문화센터</a></li>
+						<li><a href="" title="새창열림">전북신용보증재단</a></li>
+						<li><a href="" title="새창열림">태권도원</a></li>
+						<li><a href="" title="새창열림">한국국토정보공사</a></li>
+					</ul>
+					<button class="btn_close">도내유관기관 <span>닫기</span></button>
+				</div>
+			</div>
+			<div class="sitelink_list">
+				<button class="btn_open">관내주요사이트 <span>열기</span> </button>
+				<div class="list_wrap ">
+					<ul>
+						<li><a href="" title="새창열림">농촌유학1번지 전라북도</a></li>
+						<li><a href="" title="새창열림">도정현황통계시스템</a></li>
+						<li><a href="" title="새창열림">전라북도지사 인증상품</a></li>
+						<li><a href="" title="새창열림">대아수목원</a></li>
+						<li><a href="" title="새창열림">민방위 대피시설</a></li>
+						<li><a href="" title="새창열림">생생TV</a></li>
+						<li><a href="" title="새창열림">사이버교육시스템</a></li>
+						<li><a href="" title="새창열림">신재생에너지테마파크</a></li>
+						<li><a href="" title="새창열림">산림박물관</a></li>
+						<li><a href="" title="새창열림">어린이도청</a></li>
+						<li><a href="" title="새창열림">이미지갤러리</a></li>
+						<li><a href="" title="새창열림">음식문화플라자</a></li>
+						<li><a href="" title="새창열림">온라인도지사실</a></li>
+						<li><a href="" title="새창열림">전라북도마을만들기협력센터</a></li>
+						<li><a href="" title="새창열림">전라북도귀농귀촌지원센터</a></li>
+						<li><a href="" title="새창열림">전라북도청 도서관</a></li>
+						<li><a href="" title="새창열림">전북개발공사</a></li>
+						<li><a href="" title="새창열림">전라북도공무원노동조합</a></li>
+						<li><a href="" title="새창열림">전라북도건축사회</a></li>
+						<li><a href="" title="새창열림">재난안전대책본부(기상정보)</a></li>
+						<li><a href="" title="새창열림">전라북도 거시기장터</a></li>
+						<li><a href="" title="새창열림">전라북도자원봉사센터</a></li>
+						<li><a href="" title="새창열림">전라북도의회 인터넷방송</a></li>
+						<li><a href="" title="새창열림">전라북도 글로벌체험해외연수</a></li>
+						<li><a href="" title="새창열림">전라북도소상공인희망센터</a></li>
+						<li><a href="" title="새창열림">전북도청어린이집</a></li>
+						<li><a href="" title="새창열림">전라북도 공공데이터포털</a></li>
+						<li><a href="" title="새창열림">전자북</a></li>
+						<li><a href="" title="새창열림">전북스마트쉼센터</a></li>
+						<li><a href="" title="새창열림">전라북도 공공생활정보지도</a></li>
+						<li><a href="" title="새창열림">토지정보시스템</a></li>
+						<li><a href="" title="새창열림">토탈관광</a></li>
+						<li><a href="" title="새창열림">착한가게</a></li>
+						<li><a href="" title="새창열림">한국전통소리문화</a></li>
+						<li><a href="" title="새창열림">항공영상시스템</a></li>
+					</ul>
+					<button class="btn_close">관내주요사이트 <span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="f_address">
+			<p class="f_logo"><img src="/images/01_portal/common/f_logo.png" alt="천년의 비상 전라북도"></p>
+			<!--  서브사이트 클래스명 추가 subsite_foot : 접근성마크 제거 -->
+			<ul>
+				<li><a href=""><strong>개인정보처리방침</strong></a></li>
+				<li><a href="">저작권정책</a></li>
+				<li><a href="">이메일수집거부</a></li>
+				<li><a href="">RSS &amp; Open API</a></li>
+				<li><a href="">뷰어프로그램다운로드</a></li>
+			</ul>
+			<div>
+				<address>(54968) 전라북도 전주시 완산구 효자로 225</address>대표전화:063-280-2114<p class="copy">Copyright &copy; by jeollabuk-do, All rights reserved.</p>
+			</div>
+			<p class="fmark"><a href="" class="wa"><img src="/images/01_portal/common/wa.png" alt="과학기술정보통신부 웹접근성마크 (사)한국장애인단체총연합회 한국웹접근성인증평가원"></a> <a href="" class="gmark"><img src="/images/01_portal/common/gmark.png" alt="굿콘텐츠서비스"></a></p>
+			<a href="#skip" class="gotop">페이지 상단으로 이동</a>
+		</div>
+	</footer>
+	<!--하단 e-->
+</div>
+</body>
+</html>                                  

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>전라북도청</title>
+<meta name="title" content="전라북도청" />
+
+<style>
+	body, div, h1, ul{margin:0;padding:0;font-family:Dotum, "돋움", Tahoma, Geneva, sans-serif;line-height:1.6}
+	li{list-style:none}
+	a{text-decoration:none;color:#444;border:none;margin:0;padding:0;}
+	a:visited{text-decoration:none;border:none;}
+	a:active{text-decoration:none;border:none;}
+	a:hover{text-decoration:none;border:none;}
+	.container{padding:20px;}
+	h1{padding:20px;font-size:20px;color:#5b9f0b;font-weight:600;border-bottom:1px solid #5b9f0b}
+	.con{padding:30px 0}
+	.con>ul>li{padding:20px;font-size:15px;font-weight:600;background:#f5f5f5;text-align:center}
+	.con ul ul{margin:10px 0 0;background:#fff;}
+	.con li li{padding:10px;box-sizing:border-box}
+	.con li li a{padding:10px 0;font-weight:400;display:block;}
+	.con li li a:hover{text-decoration:underline}
+	.con li li a strong{padding:10px 0;background:#5b9f0b;color:#fff;display:block}
+	.con li:nth-of-type(1) ul{text-align:left;}
+	.con li:nth-of-type(1) li{width:19%;text-align:center;display:inline-block;}
+	.con li:nth-of-type(2){margin:20px 0 0}
+	.con li:nth-of-type(2) li{text-align:left;}
+	
+</style>
+
+
+	<script type="text/javascript" src="/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		function setOfficeUser(name,tel,id)
+		{
+			opener.document.getElementById("OFFICE_USER").value = name;
+			opener.document.getElementById("OFFICE_TEL").value = tel;
+			opener.document.getElementById("OFFICE_ID").value = id;
+			window.close();
+		}
+	</script>
+	</head>
+	<body style="width:600px;">
+		<!-- 가로사이즈 790으로 잡았으나 변경 상관없음 -->
+		<div class="container">
+			<h1>답변 업무자 선택</h1>
+			<div class="con">
+				<ul>
+					<li>시/군
+						<ul>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048001000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">전주시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048004000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">정읍시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048007000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">완주군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048012000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">순창군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048014000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">부안군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048011000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">임실군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048006000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">김제시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048008000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">진안군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048009000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID"><strong>무주</strong></a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048013000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">고창군</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048002000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">군산시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048003000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">익산시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048005000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">남원시</a></li>
+							<li><a href="/customuser/jikso/selectOfficeUser.jeonbuk?pcode=1048010000000&name=OFFICE_USER&tel=OFFICE_TEL&userId=OFFICE_ID">장수군</a></li>
+						</ul>
+					</li>
+					<li>무주군
+						<ul>
+							<li><a href="#" onclick="setOfficeUser('최성','063-320-2252','choisung');return false;">최성 [063-320-2252]</a>업무 : &nbsp;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+	</html>
